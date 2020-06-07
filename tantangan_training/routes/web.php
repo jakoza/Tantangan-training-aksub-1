@@ -19,5 +19,5 @@ Route::get('/', 'InventoryController@index');
 
 Route::get('/input', 'InventoryController@link_input');
 
-// Route::post('/add', 'InventoryController@store')->name('inventory.store');
+Route::post('/add', 'InventoryController@store')->name('inventory.store');
 
