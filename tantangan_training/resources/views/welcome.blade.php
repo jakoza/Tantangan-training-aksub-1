@@ -37,6 +37,9 @@
                 </tbody>
             </table>
         </div>
+        <div class="row d-flex align-items-center justify-content-center">
+            <a href="/input"><h3>Click Here to Add</h3></a>
+        </div>
 
     </div>
 </body>
