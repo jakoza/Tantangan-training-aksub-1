@@ -21,6 +21,6 @@ class InventoryController extends Controller
             'item_price' => $request->item_price,
             'item_condition'=>$request->item_condition
         ]);
-        return back();
+        return view('welcome');
     }
 }
