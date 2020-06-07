@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\InventoryController;
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Console\Input\Input;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'InventoryController@index');
+
+Route::get('/input', 'InventoryController@link_input');
+
+// Route::post('/add', 'InventoryController@store')->name('inventory.store');
+
